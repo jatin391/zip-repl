@@ -1,0 +1,80 @@
+# Replit Prompt — SWAMI VIVEKANAND SR. SEC. SCHOOL Website
+
+Neeche wala poora prompt copy karke Replit (ya Replit Agent) mein paste kar dena.
+
+---
+
+## PROMPT (isse copy karo)
+
+Build a complete, professional, multi-page school website for **SWAMI VIVEKANAND SR. SEC. SCHOOL** using React (with Vite) and Tailwind CSS. The site should feel modern, trustworthy, and polished — similar in structure and quality to a well-designed CBSE/private school website.
+
+### Brand & Theme
+- School name: **SWAMI VIVEKANAND SR. SEC. SCHOOL**
+- Tagline: **"Learn Today, Lead Tomorrow"**
+- Primary color: Navy Blue (#0B2545 or similar dark navy)
+- Accent color: Orange (#F5821F or similar warm orange)
+- Use the school logo (I will upload it separately) in the navbar and footer.
+- Typography: clean, modern sans-serif (e.g. Poppins / Inter), bold headings.
+
+### Navbar
+Sticky top navbar with the school logo + name on the left, and the following menu items on the right. Each item should open its own dedicated page/section (not just an anchor scroll) with a clean layout, banner/header, and relevant content blocks:
+1. **Home**
+2. **About Us**
+   - Sub-pages: About the School, Vision & Mission, Infrastructure
+3. **Academics**
+   - Sub-pages: Curriculum, Pre-Primary, Primary, Secondary, Senior Secondary
+4. **Principal's Message**
+5. **Facilities**
+   - Sub-pages: Library, Labs, Sports, Transport, Smart Classrooms
+6. **Gallery**
+7. **Admissions**
+   - Sub-pages: Admission Process, Fee Structure, Enquiry Form
+8. **Contact Us**
+
+Do NOT include "International Exposure" as a menu item.
+
+Make dropdown/mega-menu style submenus for items that have sub-pages, matching common private-school website UX (hover or click to reveal submenu, smooth transition).
+
+### Homepage Sections
+1. **Hero section** — full-width banner with a placeholder image area (I will add my own photo), school name, tagline, and a call-to-action button ("Apply for Admission").
+2. **Welcome/Intro strip** — short intro about the school (placeholder text, editable).
+3. **Highlights/stats bar** — e.g. Years of Excellence, Students, Faculty, Result % (placeholder numbers, editable).
+4. **Why Choose Us** — 3-4 feature cards (icons + short text), editable.
+5. **Principal's Message preview** — a small section with a placeholder circular image spot for the principal's photo and a "Read More" link to the full Principal's Message page.
+6. **Facilities preview** — grid of facility cards with icons/placeholder images.
+7. **News & Events / Notice board** — simple list, editable.
+8. **Gallery preview** — grid of placeholder images (I will add real photos).
+9. **Call-to-action banner** before footer — "Admissions Open" style banner with button.
+
+### Principal's Message Page
+- Layout: photo on one side (leave this as a clearly marked placeholder image box, labeled "Principal Photo — to be added"), message text on the other side.
+- Leave the message text as an editable placeholder paragraph (lorem-ipsum style, marked clearly as `[PRINCIPAL MESSAGE — REPLACE THIS TEXT]`) so I can paste the real message myself.
+
+### Gallery Page
+- Responsive image grid/masonry layout with placeholder image boxes (labeled `[SCHOOL PHOTO — REPLACE]`) so I can upload real photos later.
+
+### Footer (same on every page)
+- School logo + name
+- Short tagline
+- Quick links (same as navbar items)
+- Contact info block (Address, Phone, Email — placeholders for me to fill)
+- Social media icons (placeholder links)
+- Copyright line: "© 2026 Swami Vivekanand Sr. Sec. School. All rights reserved."
+
+### Technical requirements
+- React + Vite + Tailwind CSS
+- React Router for multi-page navigation
+- Fully responsive (mobile, tablet, desktop)
+- Reusable Navbar and Footer components used across all pages
+- Clean folder structure: `/src/pages`, `/src/components`
+- All images should use clearly labeled placeholder `<div>` boxes with a light gray background and text like `[REPLACE WITH REAL PHOTO]`, NOT external stock photos or copied images
+- All text content should be clearly marked as placeholder/editable where it needs my real information (principal's message, contact details, address, phone, email, stats)
+- Make sure the word "Milestone" or any other school's name does not appear anywhere — only "SWAMI VIVEKANAND SR. SEC. SCHOOL"
+
+---
+
+## Ye cheezein aapko khud add karni hongi (copyright ki wajah se):
+- Principal ki asli photo aur unka asli message
+- School ki asli photos (building, students, events, gallery)
+- Asli address, phone number, email
+- Asli stats (students count, result %, years of establishment)
