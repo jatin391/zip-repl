@@ -117,15 +117,15 @@ export function Footer() {
           <ul className="flex flex-col gap-4 text-sm text-white/80 mt-2">
             <li className="flex items-start gap-3">
               <MapPin size={18} className="text-secondary shrink-0 mt-0.5" />
-              <span className="leading-relaxed">[ADDRESS — REPLACE WITH FULL SCHOOL ADDRESS, CITY, STATE, PIN]</span>
+              <span className="leading-relaxed">Near Partap Chownk, Kaithal, Haryana</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-secondary shrink-0" />
-              <a href="tel:+1234567890" className="hover:text-secondary transition-colors">[PHONE — REPLACE]</a>
+              <a href="tel:9066165000" className="hover:text-secondary transition-colors">9066165000</a>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} className="text-secondary shrink-0" />
-              <a href="mailto:info@swamivivekanand.edu" className="hover:text-secondary transition-colors">[EMAIL — REPLACE]</a>
+              <a href="mailto:shivamurlana321@gmail.com" className="hover:text-secondary transition-colors">shivamurlana321@gmail.com</a>
             </li>
           </ul>
         </div>

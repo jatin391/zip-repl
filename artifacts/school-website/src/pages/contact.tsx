@@ -39,7 +39,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-secondary text-sm uppercase tracking-wider mb-1">Our Campus</h4>
-                      <p className="text-white/80 text-sm leading-relaxed">[SCHOOL ADDRESS — REPLACE WITH FULL LOCATION DETAILS]</p>
+                      <p className="text-white/80 text-sm leading-relaxed">Near Partap Chownk, Kaithal, Haryana</p>
                     </div>
                   </div>
                   
@@ -49,7 +49,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-secondary text-sm uppercase tracking-wider mb-1">Phone</h4>
-                      <p className="text-white/80 text-sm">[PHONE — REPLACE]</p>
+                      <p className="text-white/80 text-sm">9066165000</p>
                     </div>
                   </div>
 
@@ -59,7 +59,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-secondary text-sm uppercase tracking-wider mb-1">Email</h4>
-                      <p className="text-white/80 text-sm">[EMAIL — REPLACE]</p>
+                      <p className="text-white/80 text-sm">shivamurlana321@gmail.com</p>
                     </div>
                   </div>
 
@@ -111,16 +111,18 @@ export default function Contact() {
                 </form>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="h-[400px] w-full bg-muted rounded-3xl overflow-hidden border border-border shadow-sm flex items-center justify-center relative group">
-                 {/* Map visual placeholder */}
-                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iI2QxZDVkYiIgLz4KPC9zdmc+')] opacity-50"></div>
-                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white/90 backdrop-blur-sm px-6 py-4 rounded-xl border border-border shadow-lg flex flex-col items-center gap-2">
-                       <MapPin size={24} className="text-primary" />
-                       <span className="font-bold text-primary tracking-wide text-sm">[REPLACE WITH GOOGLE MAPS EMBED]</span>
-                    </div>
-                 </div>
+              {/* Map Embed */}
+              <div className="h-[400px] w-full rounded-3xl overflow-hidden border border-border shadow-sm">
+                <iframe
+                  title="School Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13902.5!2d76.3998!3d29.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391225b06f08bf5f%3A0x6b9c1e7b7d7e7b7e!2sPartap%20Chowk%2C%20Kaithal%2C%20Haryana!5e0!3m2!1sen!2sin!4v1690000000000"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
             </div>

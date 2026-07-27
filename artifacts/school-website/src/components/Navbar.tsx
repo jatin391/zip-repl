@@ -82,13 +82,13 @@ export function Navbar() {
       {/* Top Bar - Contact Info */}
       <div className="hidden lg:flex bg-primary text-primary-foreground text-xs py-2 px-6 justify-between items-center z-50 relative">
         <div className="flex gap-6">
-          <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-secondary transition-colors" data-testid="link-topbar-phone">
+          <a href="tel:9066165000" className="flex items-center gap-2 hover:text-secondary transition-colors" data-testid="link-topbar-phone">
             <Phone size={14} />
-            <span>[PHONE — REPLACE]</span>
+            <span>9066165000</span>
           </a>
-          <a href="mailto:info@swamivivekanand.edu" className="flex items-center gap-2 hover:text-secondary transition-colors" data-testid="link-topbar-email">
+          <a href="mailto:shivamurlana321@gmail.com" className="flex items-center gap-2 hover:text-secondary transition-colors" data-testid="link-topbar-email">
             <Mail size={14} />
-            <span>[EMAIL — REPLACE]</span>
+            <span>shivamurlana321@gmail.com</span>
           </a>
         </div>
         <div className="font-semibold text-secondary tracking-wider">
