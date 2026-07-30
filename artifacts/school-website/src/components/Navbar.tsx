@@ -78,9 +78,9 @@ export function Navbar() {
   ];
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
       {/* Top Bar - Contact Info */}
-      <div className="hidden lg:flex bg-primary text-primary-foreground text-xs py-2 px-6 justify-between items-center z-50 relative">
+      <div className="hidden lg:flex bg-primary text-primary-foreground text-xs py-2 px-6 justify-between items-center">
         <div className="flex gap-6">
           <a href="tel:9066165000" className="flex items-center gap-2 hover:text-secondary transition-colors" data-testid="link-topbar-phone">
             <Phone size={14} />
@@ -99,9 +99,8 @@ export function Navbar() {
       {/* Main Navbar */}
       <nav
         className={cn(
-          'fixed w-full z-40 transition-all duration-300',
-          scrolled ? 'bg-primary shadow-lg py-3' : 'bg-transparent py-5',
-          !isHome && 'sticky top-0 bg-primary shadow-lg py-3'
+          'w-full transition-all duration-300',
+          scrolled || !isHome ? 'bg-primary shadow-lg py-3' : 'bg-transparent py-5'
         )}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
@@ -206,6 +205,6 @@ export function Navbar() {
           </div>
         )}
       </nav>
-    </>
+    </div>
   );
 }

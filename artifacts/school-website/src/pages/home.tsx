@@ -189,42 +189,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEWS & EVENTS */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">News & Events</h2>
-            <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col gap-4">
-              {[
-                { title: 'Annual Day Celebration — [DATE]', type: 'Event' },
-                { title: 'Board Results 2025 Announced', type: 'News' },
-                { title: 'Admission Open for Session 2026-27', type: 'Notice' },
-                { title: 'Science Exhibition Winners Declared', type: 'Event' },
-              ].map((item, i) => (
-                <div key={i} className="flex flex-col md:flex-row md:items-center justify-between p-6 rounded-xl border border-border hover:border-secondary/50 hover:shadow-md transition-all group">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/5 text-primary text-xs font-bold px-3 py-1 rounded-full mt-1">
-                      {item.type}
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-primary group-hover:text-secondary transition-colors">[REPLACE WITH REAL NEWS] {item.title}</h4>
-                      <p className="text-sm text-muted-foreground mt-1">Click to read full details and updates regarding this announcement.</p>
-                    </div>
-                  </div>
-                  <button className="mt-4 md:mt-0 text-sm font-semibold text-secondary flex items-center group-hover:underline">
-                    Read More <ChevronRight size={16} />
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* GALLERY PREVIEW */}
       <section className="py-24 bg-primary text-white">
         <div className="container mx-auto px-6">
