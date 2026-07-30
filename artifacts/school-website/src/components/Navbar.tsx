@@ -98,10 +98,7 @@ export function Navbar() {
 
       {/* Main Navbar */}
       <nav
-        className={cn(
-          'w-full transition-all duration-300',
-          scrolled || !isHome ? 'bg-primary shadow-lg py-3' : 'bg-transparent py-5'
-        )}
+        className="w-full bg-primary shadow-lg py-3 transition-all duration-300"
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           {/* Logo */}
