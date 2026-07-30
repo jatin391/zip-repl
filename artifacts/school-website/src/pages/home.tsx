@@ -7,10 +7,15 @@ export default function Home() {
     <div className="w-full">
       {/* HERO SECTION */}
       <section className="relative w-full h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Placeholder for Hero Banner */}
-        <div className="absolute inset-0 bg-gray-900 z-0 flex items-center justify-center text-white/30 text-2xl font-bold">
-          [REPLACE WITH SCHOOL BANNER PHOTO]
-        </div>
+        {/* Hero Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="/hero-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
         <div className="absolute inset-0 bg-primary/70 z-10" />
         
         <div className="container relative z-20 mx-auto px-6 text-center pt-20">
