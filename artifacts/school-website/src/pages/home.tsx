@@ -7,10 +7,7 @@ export default function Home() {
     <div className="w-full">
       {/* HERO SECTION */}
       <section className="relative w-full h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Placeholder for Hero Banner */}
-        <div className="absolute inset-0 bg-gray-900 z-0 flex items-center justify-center text-white/30 text-2xl font-bold">
-          [REPLACE WITH SCHOOL BANNER PHOTO]
-        </div>
+        <div className="absolute inset-0 bg-primary z-0" />
         <div className="absolute inset-0 bg-primary/70 z-10" />
         
         <div className="container relative z-20 mx-auto px-6 text-center pt-20">
@@ -20,9 +17,6 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto flex flex-col items-center"
           >
-            <p className="text-xl md:text-2xl text-white/90 font-medium mb-10 tracking-wide uppercase">
-              Learn Today, Lead Tomorrow
-            </p>
             <Link 
               href="/admissions" 
               className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary/90 transition-transform hover:scale-105 shadow-xl flex items-center gap-2 group"
