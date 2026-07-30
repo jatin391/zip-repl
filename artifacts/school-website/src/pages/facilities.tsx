@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearch } from 'wouter';
 import { Book, Microscope, Monitor, Bus, Activity } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -47,8 +48,19 @@ const facilityData = [
   }
 ];
 
+const VALID_FACILITY_TABS = facilityData.map(f => f.id);
+
 export default function Facilities() {
-  const [activeFacility, setActiveFacility] = useState(facilityData[0].id);
+  const search = useSearch();
+  const tabFromUrl = VALID_FACILITY_TABS.includes(new URLSearchParams(search).get('tab') ?? '')
+    ? (new URLSearchParams(search).get('tab') as string)
+    : facilityData[0].id;
+
+  const [activeFacility, setActiveFacility] = useState(tabFromUrl);
+
+  useEffect(() => {
+    setActiveFacility(tabFromUrl);
+  }, [tabFromUrl]);
 
   return (
     <div className="w-full bg-background min-h-screen">
