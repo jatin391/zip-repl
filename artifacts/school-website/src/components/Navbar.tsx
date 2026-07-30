@@ -38,7 +38,7 @@ export function Navbar() {
       sublinks: [
         { name: 'About the School', href: '/about#history' },
         { name: 'Vision & Mission', href: '/about#vision' },
-        { name: 'Infrastructure', href: '/about#infrastructure' },
+        { name: 'Core Values', href: '/about#core-values' },
       ],
     },
     {

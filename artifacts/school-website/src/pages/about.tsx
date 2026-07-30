@@ -88,7 +88,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-24">
+      <section id="core-values" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-primary mb-6">Core Values</h2>
