@@ -7,7 +7,14 @@ export default function Home() {
     <div className="w-full">
       {/* HERO SECTION */}
       <section className="relative w-full h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-primary z-0" />
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="/hero-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
         <div className="absolute inset-0 bg-primary/70 z-10" />
         
         <div className="container relative z-20 mx-auto px-6 text-center pt-20">
