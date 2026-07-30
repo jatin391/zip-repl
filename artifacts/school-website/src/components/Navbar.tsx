@@ -30,6 +30,15 @@ export function Navbar() {
     setMobileMenuOpen(false);
   }, [location]);
 
+  const handleSublinkClick = (e: React.MouseEvent, href: string) => {
+    const [path, hash] = href.split('#');
+    if (hash && location === path) {
+      e.preventDefault();
+      const el = document.getElementById(hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const navLinks = [
     { name: 'Home', href: '/' },
     {
@@ -148,6 +157,7 @@ export function Navbar() {
                         <Link
                           key={sublink.name}
                           href={sublink.href}
+                          onClick={(e) => handleSublinkClick(e, sublink.href)}
                           className="px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors"
                           data-testid={`link-nav-sub-${sublink.name.toLowerCase().replace(/[^a-z]/g, '')}`}
                         >
@@ -189,6 +199,7 @@ export function Navbar() {
                         <Link
                           key={sublink.name}
                           href={sublink.href}
+                          onClick={(e) => handleSublinkClick(e, sublink.href)}
                           className="text-white/80 text-sm hover:text-secondary transition-colors"
                         >
                           {sublink.name}
