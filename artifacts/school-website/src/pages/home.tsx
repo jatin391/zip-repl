@@ -20,13 +20,6 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto flex flex-col items-center"
           >
-            <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center mb-8 shadow-2xl">
-               <span className="text-primary font-bold text-xs md:text-sm text-center leading-tight">LOGO<br/>HERE</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg tracking-tight">
-              SWAMI VIVEKANAND <br className="hidden md:block" />
-              <span className="text-3xl md:text-5xl lg:text-6xl text-secondary">SR. SEC. SCHOOL</span>
-            </h1>
             <p className="text-xl md:text-2xl text-white/90 font-medium mb-10 tracking-wide uppercase">
               Learn Today, Lead Tomorrow
             </p>
