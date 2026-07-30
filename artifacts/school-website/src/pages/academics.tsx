@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearch } from 'wouter';
 import { BookOpen, MonitorPlay, FlaskConical, Trophy } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+const VALID_TABS = ['curriculum', 'pre-primary', 'primary', 'secondary', 'senior-secondary'];
 
 function PageHeader({ title, subtitle }: { title: string, subtitle: string }) {
   return (
@@ -15,7 +18,16 @@ function PageHeader({ title, subtitle }: { title: string, subtitle: string }) {
 }
 
 export default function Academics() {
-  const [activeTab, setActiveTab] = useState('curriculum');
+  const search = useSearch();
+  const tabFromUrl = VALID_TABS.includes(new URLSearchParams(search).get('tab') ?? '')
+    ? (new URLSearchParams(search).get('tab') as string)
+    : 'curriculum';
+
+  const [activeTab, setActiveTab] = useState(tabFromUrl);
+
+  useEffect(() => {
+    setActiveTab(tabFromUrl);
+  }, [tabFromUrl]);
 
   const tabs = [
     { id: 'curriculum', label: 'Curriculum', icon: BookOpen },
