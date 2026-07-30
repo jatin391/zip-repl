@@ -10,13 +10,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-primary z-0" />
         <div className="absolute inset-0 bg-primary/70 z-10" />
         
-        <div className="container relative z-20 mx-auto px-6 text-center pt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto flex flex-col items-center"
-          >
+        
+      </section>
+
+      {/* WELCOME STRIP */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="flex justify-center mb-10">
             <Link 
               href="/admissions" 
               className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary/90 transition-transform hover:scale-105 shadow-xl flex items-center gap-2 group"
@@ -25,13 +25,7 @@ export default function Home() {
               Apply for Admission
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* WELCOME STRIP */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
+          </div>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               Welcome to Swami Vivekanand Sr. Sec. School
