@@ -113,9 +113,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group" data-testid="link-nav-logo">
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-secondary/50 group-hover:border-secondary transition-colors">
-              <span className="text-[10px] font-bold text-primary text-center leading-tight">
-                LOGO<br/>HERE
-              </span>
+              <img src="/school-logo.png" alt="Swami Vivekanand School Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className={cn(

@@ -9,9 +9,7 @@ export function Footer() {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
-              <span className="text-[10px] font-bold text-primary text-center leading-tight">
-                LOGO<br/>HERE
-              </span>
+              <img src="/school-logo.png" alt="Swami Vivekanand School Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold tracking-tight text-white">
