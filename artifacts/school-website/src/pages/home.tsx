@@ -15,16 +15,6 @@ export default function Home() {
           muted
           playsInline
         />
-        <div className="absolute bottom-10 right-10 z-10">
-          <Link
-            href="/admissions"
-            className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary/90 transition-transform hover:scale-105 shadow-xl flex items-center gap-2 group"
-            data-testid="link-hero-admissions"
-          >
-            Apply for Admission
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
       </section>
 
       {/* WELCOME STRIP */}
