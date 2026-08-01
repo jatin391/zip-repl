@@ -20,6 +20,7 @@ const facilityData = [
     id: 'library',
     title: 'The Library',
     icon: Book,
+    image: '/facility-library.png',
     description: '[REPLACE PLACEHOLDER TEXT] Our spacious library is the heart of intellectual exploration on campus. Stocked with over 15,000 volumes including academic references, fiction, non-fiction, journals, and encyclopedias. It provides a serene environment for reading and research.',
   },
   {
@@ -110,13 +111,22 @@ export default function Facilities() {
                       </p>
                     </div>
 
-                    {/* Image Placeholder */}
-                    <div className="h-[400px] w-full bg-gray-200 rounded-2xl shadow-inner border-4 border-white flex flex-col items-center justify-center relative overflow-hidden group">
-                      <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500"></div>
-                      <fac.icon size={48} className="text-gray-400 mb-4 opacity-50" />
-                      <span className="text-gray-500 font-medium z-10 text-center px-4">
-                        [FACILITY PHOTO — REPLACE: {fac.title.toUpperCase()}]
-                      </span>
+                    {/* Image */}
+                    <div className="h-[400px] w-full rounded-2xl shadow-inner border-4 border-white overflow-hidden relative">
+                      {(fac as typeof fac & { image?: string }).image ? (
+                        <img
+                          src={(fac as typeof fac & { image?: string }).image}
+                          alt={fac.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gray-200 flex flex-col items-center justify-center">
+                          <fac.icon size={48} className="text-gray-400 mb-4 opacity-50" />
+                          <span className="text-gray-500 font-medium text-center px-4">
+                            [FACILITY PHOTO — REPLACE: {fac.title.toUpperCase()}]
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                   </div>
