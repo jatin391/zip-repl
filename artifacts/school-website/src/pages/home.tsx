@@ -47,12 +47,12 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x-0 md:divide-x divide-white/20">
             {[
-              { number: '25+', label: 'Years of Excellence', icon: BookOpen },
-              { number: '2500+', label: 'Students', icon: Users },
-              { number: '150+', label: 'Faculty', icon: GraduationCap },
-              { number: '98%', label: 'Results', icon: Building },
+              { number: '25+', label: 'Years of Excellence' },
+              { number: '5000+', label: 'Students' },
+              { number: '150+', label: 'Faculty' },
+              { number: '95%', label: 'Results' },
             ].map((stat, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -60,9 +60,8 @@ export default function Home() {
                 transition={{ delay: i * 0.1 }}
                 className="flex flex-col items-center text-center px-4"
               >
-                <stat.icon size={40} className="text-secondary mb-4 opacity-80" />
-                <span className="text-4xl md:text-5xl font-bold mb-2">[REPLACE WITH ACTUAL STATS]</span>
-                <span className="text-sm md:text-base text-white/80 uppercase tracking-wider">{stat.label}</span>
+                <h2 className="text-4xl md:text-5xl font-bold mb-2 text-secondary">{stat.number}</h2>
+                <p className="text-sm md:text-base text-white/80 uppercase tracking-wider">{stat.label}</p>
               </motion.div>
             ))}
           </div>
