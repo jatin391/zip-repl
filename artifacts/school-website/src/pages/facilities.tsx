@@ -33,6 +33,7 @@ const facilityData = [
     id: 'classrooms',
     title: 'Smart Classrooms',
     icon: Monitor,
+    image: '/facility-classrooms.png',
     description: '[REPLACE PLACEHOLDER TEXT] Every classroom is digitally enabled with smart boards and high-speed internet, transforming traditional teaching into an interactive, audio-visual learning experience that enhances student engagement and retention.',
   },
   {
