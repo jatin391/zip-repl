@@ -143,8 +143,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {['Library', 'Science Labs', 'Sports Complex', 'Transport', 'Smart Classrooms', 'Computer Lab'].map((facility, i) => (
-              <motion.div 
+            {[
+              { name: 'Library', image: '/facility-library.png' },
+              { name: 'Science Labs', image: null },
+              { name: 'Sports Complex', image: null },
+              { name: 'Transport', image: null },
+              { name: 'Smart Classrooms', image: '/facility-classrooms.png' },
+              { name: 'Computer Lab', image: null },
+            ].map((facility, i) => (
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -152,11 +159,15 @@ export default function Home() {
                 className="bg-white rounded-2xl overflow-hidden shadow-md group border border-border"
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-                  <span className="text-gray-500 text-sm font-medium z-10">[FACILITY PHOTO — REPLACE]</span>
+                  {facility.image ? (
+                    <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <span className="text-gray-500 text-sm font-medium z-10">[FACILITY PHOTO — REPLACE]</span>
+                  )}
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">{facility}</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">{facility.name}</h3>
                   <p className="text-muted-foreground text-sm">State-of-the-art infrastructure designed to support comprehensive learning and development.</p>
                 </div>
               </motion.div>
