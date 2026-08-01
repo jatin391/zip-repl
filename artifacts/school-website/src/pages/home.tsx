@@ -149,7 +149,7 @@ export default function Home() {
               { name: 'Sports Complex', image: null },
               { name: 'Transport', image: null },
               { name: 'Smart Classrooms', image: '/facility-classrooms.png' },
-              { name: 'Computer Lab', image: null },
+              { name: 'Computer Lab', image: '/facility-computer-lab.png' },
             ].map((facility, i) => (
               <motion.div
                 key={i}
