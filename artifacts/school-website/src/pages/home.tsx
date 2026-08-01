@@ -146,7 +146,7 @@ export default function Home() {
             {[
               { name: 'Library', image: '/facility-library.png' },
               { name: 'Science Labs', image: '/facility-labs.png' },
-              { name: 'Sports Complex', image: null },
+              { name: 'Sports Complex', image: '/facility-sports.png' },
               { name: 'Transport', image: null },
               { name: 'Smart Classrooms', image: '/facility-classrooms.png' },
               { name: 'Computer Lab', image: '/facility-computer-lab.png' },

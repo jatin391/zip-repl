@@ -41,6 +41,7 @@ const facilityData = [
     id: 'sports',
     title: 'Sports Complex',
     icon: Activity,
+    image: '/facility-sports.png',
     description: '[REPLACE PLACEHOLDER TEXT] Physical education is integral to our curriculum. Our facilities include a full-size basketball court, cricket nets, football ground, and indoor facilities for table tennis and chess, supported by professional coaches.',
   },
   {
