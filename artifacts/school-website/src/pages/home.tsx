@@ -145,7 +145,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { name: 'Library', image: '/facility-library.png' },
-              { name: 'Science Labs', image: null },
+              { name: 'Science Labs', image: '/facility-labs.png' },
               { name: 'Sports Complex', image: null },
               { name: 'Transport', image: null },
               { name: 'Smart Classrooms', image: '/facility-classrooms.png' },

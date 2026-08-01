@@ -27,6 +27,7 @@ const facilityData = [
     id: 'labs',
     title: 'Science Laboratories',
     icon: Microscope,
+    image: '/facility-labs.png',
     description: '[REPLACE PLACEHOLDER TEXT] We boast state-of-the-art Physics, Chemistry, and Biology laboratories. These well-equipped spaces allow students to engage in hands-on experiments, bridging the gap between theoretical concepts and practical application.',
   },
   {
