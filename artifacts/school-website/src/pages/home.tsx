@@ -35,8 +35,8 @@ export default function Home() {
               Welcome to Swami Vivekanand Sr. Sec. School
             </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8 rounded-full" />
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              [SCHOOL INTRO — REPLACE WITH REAL TEXT] A legacy of educational excellence where traditional values meet modern learning methodologies. We strive to nurture young minds into responsible, capable, and compassionate leaders of tomorrow, following the profound ideals of Swami Vivekananda.
+            <p className="text-lg text-gray-700 leading-relaxed">
+              A legacy of educational excellence where traditional values meet modern learning methodologies. We strive to nurture young minds into responsible, capable, and compassionate leaders of tomorrow, following the profound ideals of Swami Vivekananda.
             </p>
           </div>
         </div>
