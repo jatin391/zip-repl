@@ -30,11 +30,8 @@ export default function PrincipalsMessage() {
               
               {/* Photo Column */}
               <div className="lg:col-span-4 flex flex-col items-center text-center">
-                <div className="w-64 h-80 bg-gray-200 rounded-2xl shadow-md border-4 border-white overflow-hidden flex items-center justify-center relative mb-6">
-                  <div className="absolute inset-0 bg-primary/5"></div>
-                  <span className="text-gray-500 font-medium z-10 px-4 text-center">
-                    [PRINCIPAL PHOTO — TO BE ADDED]
-                  </span>
+                <div className="w-64 h-80 rounded-2xl shadow-md border-4 border-white overflow-hidden mb-6">
+                  <img src="/principal.png" alt="Principal" className="w-full h-full object-cover object-top" />
                 </div>
                 <h3 className="text-2xl font-bold text-primary">[PRINCIPAL'S NAME]</h3>
                 <p className="text-secondary font-semibold uppercase tracking-wider text-sm mt-2">

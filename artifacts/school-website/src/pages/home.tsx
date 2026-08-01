@@ -121,10 +121,8 @@ export default function Home() {
                   <ChevronRight size={20} className="ml-1 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
-              <div className="h-[400px] lg:h-auto bg-gray-200 relative flex items-center justify-center">
-                <span className="text-gray-500 font-medium absolute z-10 bg-white/80 px-4 py-2 rounded-md">[PRINCIPAL PHOTO — REPLACE]</span>
-                {/* Decorative shape */}
-                <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
+              <div className="h-[400px] lg:h-auto relative overflow-hidden">
+                <img src="/principal.png" alt="Principal" className="w-full h-full object-cover object-top" />
               </div>
             </div>
           </div>
