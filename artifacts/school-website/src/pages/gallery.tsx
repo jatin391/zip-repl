@@ -16,16 +16,25 @@ function PageHeader({ title, subtitle }: { title: string, subtitle: string }) {
 
 const categories = ['All', 'Events', 'Sports', 'Academics', 'Infrastructure'];
 
-const placeholderImages = Array.from({ length: 12 }).map((_, i) => ({
-  id: i,
-  category: categories[Math.floor(Math.random() * (categories.length - 1)) + 1],
-  height: i % 3 === 0 ? 'h-80' : i % 2 === 0 ? 'h-64' : 'h-48'
-}));
+const galleryItems = [
+  { id: 0,  category: 'Events',         image: '/gallery-edu-fiesta.png', alt: 'Education Fair - Edu Fiesta Event',        height: 'h-80' },
+  { id: 1,  category: 'Sports',         image: null,                      alt: 'Sports activity',                          height: 'h-64' },
+  { id: 2,  category: 'Academics',      image: null,                      alt: 'Academic session',                         height: 'h-48' },
+  { id: 3,  category: 'Events',         image: '/gallery-edu-fiesta.png', alt: 'Education Fair - Edu Fiesta Event',        height: 'h-64' },
+  { id: 4,  category: 'Infrastructure', image: null,                      alt: 'School infrastructure',                    height: 'h-80' },
+  { id: 5,  category: 'Sports',         image: null,                      alt: 'Sports competition',                       height: 'h-48' },
+  { id: 6,  category: 'Events',         image: '/gallery-edu-fiesta.png', alt: 'Education Fair - Edu Fiesta Event',        height: 'h-48' },
+  { id: 7,  category: 'Academics',      image: null,                      alt: 'Classroom activity',                       height: 'h-80' },
+  { id: 8,  category: 'Infrastructure', image: null,                      alt: 'School building',                          height: 'h-64' },
+  { id: 9,  category: 'Events',         image: '/gallery-edu-fiesta.png', alt: 'Education Fair - Edu Fiesta Event',        height: 'h-64' },
+  { id: 10, category: 'Sports',         image: null,                      alt: 'Annual sports day',                        height: 'h-48' },
+  { id: 11, category: 'Academics',      image: null,                      alt: 'Science exhibition',                       height: 'h-80' },
+];
 
 export default function Gallery() {
   const [filter, setFilter] = useState('All');
 
-  const filteredImages = placeholderImages.filter(img => filter === 'All' || img.category === filter);
+  const filteredImages = galleryItems.filter(img => filter === 'All' || img.category === filter);
 
   return (
     <div className="w-full bg-background min-h-screen">
@@ -67,20 +76,28 @@ export default function Gallery() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
                   className={cn(
-                    "w-full bg-gray-200 rounded-xl overflow-hidden relative group break-inside-avoid shadow-sm",
+                    "w-full rounded-xl overflow-hidden relative group break-inside-avoid shadow-sm",
                     img.height
                   )}
                 >
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 bg-muted">
-                    <span className="text-xs font-bold uppercase tracking-wider mb-2 opacity-50">{img.category}</span>
-                    <span className="text-sm font-medium text-center px-4">[SCHOOL PHOTO — REPLACE]</span>
-                  </div>
-                  
+                  {img.image ? (
+                    <img
+                      src={img.image}
+                      alt={img.alt}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 bg-muted">
+                      <span className="text-xs font-bold uppercase tracking-wider mb-2 opacity-50">{img.category}</span>
+                      <span className="text-sm font-medium text-center px-4">[SCHOOL PHOTO — REPLACE]</span>
+                    </div>
+                  )}
+
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                     <span className="text-white font-bold tracking-wider uppercase text-sm border-2 border-secondary px-4 py-2 rounded-full">
-                       View Image
-                     </span>
+                    <span className="text-white font-bold tracking-wider uppercase text-sm border-2 border-secondary px-4 py-2 rounded-full">
+                      View Image
+                    </span>
                   </div>
                 </motion.div>
               ))}
