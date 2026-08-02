@@ -26,7 +26,7 @@ const galleryItems = [
   { id: 6,  category: 'Events',         image: '/gallery-event-3.png',    alt: 'Independence Day Celebration',             height: 'h-48' },
   { id: 7,  category: 'Academics',      image: null,                      alt: 'Classroom activity',                       height: 'h-80' },
   { id: 8,  category: 'Infrastructure', image: null,                      alt: 'School building',                          height: 'h-64' },
-  { id: 9,  category: 'Events',         image: null,                      alt: 'School event',                             height: 'h-64' },
+  { id: 9,  category: 'Events',         image: '/gallery-event-4.png',    alt: 'Annual Farewell Celebration',              height: 'h-64' },
   { id: 10, category: 'Sports',         image: null,                      alt: 'Annual sports day',                        height: 'h-48' },
   { id: 11, category: 'Academics',      image: null,                      alt: 'Science exhibition',                       height: 'h-80' },
 ];
