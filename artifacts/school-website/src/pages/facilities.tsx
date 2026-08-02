@@ -48,6 +48,7 @@ const facilityData = [
     id: 'transport',
     title: 'Safe Transport',
     icon: Bus,
+    image: '/facility-transport.png',
     description: '[REPLACE PLACEHOLDER TEXT] A fleet of well-maintained GPS-enabled buses covers extensive routes across the city. Each bus is staffed with a trained driver and female attendant to ensure the safety and comfort of our students during their commute.',
   }
 ];
