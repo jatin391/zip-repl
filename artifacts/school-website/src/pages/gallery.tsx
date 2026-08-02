@@ -23,7 +23,7 @@ const galleryItems = [
   { id: 3,  category: 'Events',         image: '/gallery-event-2.png',    alt: 'Art & Classroom Event',                    height: 'h-64' },
   { id: 4,  category: 'Infrastructure', image: null,                      alt: 'School infrastructure',                    height: 'h-80' },
   { id: 5,  category: 'Sports',         image: null,                      alt: 'Sports competition',                       height: 'h-48' },
-  { id: 6,  category: 'Events',         image: null,                      alt: 'School event',                             height: 'h-48' },
+  { id: 6,  category: 'Events',         image: '/gallery-event-3.png',    alt: 'Independence Day Celebration',             height: 'h-48' },
   { id: 7,  category: 'Academics',      image: null,                      alt: 'Classroom activity',                       height: 'h-80' },
   { id: 8,  category: 'Infrastructure', image: null,                      alt: 'School building',                          height: 'h-64' },
   { id: 9,  category: 'Events',         image: null,                      alt: 'School event',                             height: 'h-64' },
