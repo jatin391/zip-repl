@@ -43,10 +43,10 @@ export default function About() {
               <div className="w-20 h-1 bg-secondary mb-8 rounded-full" />
               <div className="prose prose-lg text-muted-foreground">
                 <p>
-                  [REPLACE PLACEHOLDER TEXT] Founded on the enduring principles of Swami Vivekananda, our school has been a beacon of knowledge and character-building for over two decades. We believe that education is the manifestation of the perfection already in man.
+                  Founded on the enduring principles of Swami Vivekananda, our school has been a beacon of knowledge and character-building for over two decades. We believe that education is the manifestation of the perfection already in man.
                 </p>
                 <p>
-                  [REPLACE PLACEHOLDER TEXT] From humble beginnings, we have grown into a premier CBSE institution, consistently delivering academic excellence while remaining deeply rooted in our cultural heritage and values.
+                  From humble beginnings, we have grown into a premier CBSE institution, consistently delivering academic excellence while remaining deeply rooted in our cultural heritage and values.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function About() {
               <Target className="text-secondary w-12 h-12 mb-6 relative z-10" />
               <h3 className="text-2xl font-bold text-primary mb-4 relative z-10">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed relative z-10">
-                [REPLACE PLACEHOLDER TEXT] To create an educational ecosystem that nurtures intellectual curiosity, fosters moral integrity, and empowers students to become globally conscious citizens who contribute meaningfully to society.
+                To create an educational ecosystem that nurtures intellectual curiosity, fosters moral integrity, and empowers students to become globally conscious citizens who contribute meaningfully to society.
               </p>
             </div>
 
@@ -80,7 +80,7 @@ export default function About() {
               <Lightbulb className="text-secondary w-12 h-12 mb-6 relative z-10" />
               <h3 className="text-2xl font-bold mb-4 relative z-10">Our Mission</h3>
               <p className="text-white/80 leading-relaxed relative z-10">
-                [REPLACE PLACEHOLDER TEXT] To provide a holistic, student-centric environment that challenges young minds to achieve academic excellence, discover their unique talents, and develop the resilience required to thrive in a dynamic world.
+                To provide a holistic, student-centric environment that challenges young minds to achieve academic excellence, discover their unique talents, and develop the resilience required to thrive in a dynamic world.
               </p>
             </div>
           </div>

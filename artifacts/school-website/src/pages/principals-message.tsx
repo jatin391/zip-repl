@@ -53,28 +53,28 @@ export default function PrincipalsMessage() {
                   </p>
                   
                   <p className="p-4 bg-muted/50 rounded-lg border-l-4 border-secondary text-primary font-medium italic">
-                    [PRINCIPAL MESSAGE — REPLACE THIS TEXT WITH THE PRINCIPAL'S ACTUAL MESSAGE]
+                    "Education is not the filling of a pail, but the lighting of a fire."
                   </p>
 
                   <p>
-                    [REPLACE THIS TEXT WITH CONTINUED MESSAGE] It gives me immense pleasure to welcome you to Swami Vivekanand Sr. Sec. School. In today's rapidly changing world, education must go beyond textbooks and examinations. It must build character, instil values, and prepare young minds to face the challenges of life with courage and conviction.
+                    It gives me immense pleasure to welcome you to Swami Vivekanand Sr. Sec. School. In today's rapidly changing world, education must go beyond textbooks and examinations. It must build character, instil values, and prepare young minds to face the challenges of life with courage and conviction.
                   </p>
 
                   <p>
-                    [REPLACE THIS TEXT] Our pedagogical approach is rooted in the philosophy that every child is unique and possesses immense potential. Our dedicated team of educators strives to create an environment where intellectual curiosity is nurtured, creativity is encouraged, and moral integrity is upheld.
+                    Our pedagogical approach is rooted in the philosophy that every child is unique and possesses immense potential. Our dedicated team of educators strives to create an environment where intellectual curiosity is nurtured, creativity is encouraged, and moral integrity is upheld.
                   </p>
 
                   <p>
-                    [REPLACE THIS TEXT] We are committed to providing a holistic educational experience that encompasses academic excellence, physical fitness, emotional well-being, and social responsibility. Our state-of-the-art infrastructure and progressive curriculum ensure that our students are well-equipped to excel in an increasingly competitive global landscape.
+                    We are committed to providing a holistic educational experience that encompasses academic excellence, physical fitness, emotional well-being, and social responsibility. Our state-of-the-art infrastructure and progressive curriculum ensure that our students are well-equipped to excel in an increasingly competitive global landscape.
                   </p>
                   
                   <p>
-                    [REPLACE THIS TEXT] I invite you to join us in this beautiful journey of learning and growth. Together, let us shape a brighter future for our children and our nation.
+                    I invite you to join us in this beautiful journey of learning and growth. Together, let us shape a brighter future for our children and our nation.
                   </p>
 
                   <div className="pt-8 mt-8 border-t border-border">
                     <p className="font-bold text-primary text-xl mb-1">Warm Regards,</p>
-                    <p className="text-primary font-medium">[PRINCIPAL'S NAME]</p>
+                    <p className="text-primary font-medium">Principal</p>
                     <p className="text-sm text-muted-foreground">Principal, Swami Vivekanand Sr. Sec. School</p>
                   </div>
                 </div>

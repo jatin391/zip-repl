@@ -21,35 +21,35 @@ const facilityData = [
     title: 'The Library',
     icon: Book,
     image: '/facility-library.png',
-    description: '[REPLACE PLACEHOLDER TEXT] Our spacious library is the heart of intellectual exploration on campus. Stocked with over 15,000 volumes including academic references, fiction, non-fiction, journals, and encyclopedias. It provides a serene environment for reading and research.',
+    description: 'Our spacious library is the heart of intellectual exploration on campus. Stocked with over 15,000 volumes including academic references, fiction, non-fiction, journals, and encyclopedias. It provides a serene environment for reading and research.',
   },
   {
     id: 'labs',
     title: 'Science Laboratories',
     icon: Microscope,
     image: '/facility-labs.png',
-    description: '[REPLACE PLACEHOLDER TEXT] We boast state-of-the-art Physics, Chemistry, and Biology laboratories. These well-equipped spaces allow students to engage in hands-on experiments, bridging the gap between theoretical concepts and practical application.',
+    description: 'We boast state-of-the-art Physics, Chemistry, and Biology laboratories. These well-equipped spaces allow students to engage in hands-on experiments, bridging the gap between theoretical concepts and practical application.',
   },
   {
     id: 'classrooms',
     title: 'Smart Classrooms',
     icon: Monitor,
     image: '/facility-classrooms.png',
-    description: '[REPLACE PLACEHOLDER TEXT] Every classroom is digitally enabled with smart boards and high-speed internet, transforming traditional teaching into an interactive, audio-visual learning experience that enhances student engagement and retention.',
+    description: 'Every classroom is digitally enabled with smart boards and high-speed internet, transforming traditional teaching into an interactive, audio-visual learning experience that enhances student engagement and retention.',
   },
   {
     id: 'sports',
     title: 'Sports Complex',
     icon: Activity,
     image: '/facility-sports.png',
-    description: '[REPLACE PLACEHOLDER TEXT] Physical education is integral to our curriculum. Our facilities include a full-size basketball court, cricket nets, football ground, and indoor facilities for table tennis and chess, supported by professional coaches.',
+    description: 'Physical education is integral to our curriculum. Our facilities include a full-size basketball court, cricket nets, football ground, and indoor facilities for table tennis and chess, supported by professional coaches.',
   },
   {
     id: 'transport',
     title: 'Safe Transport',
     icon: Bus,
     image: '/facility-transport.png',
-    description: '[REPLACE PLACEHOLDER TEXT] A fleet of well-maintained GPS-enabled buses covers extensive routes across the city. Each bus is staffed with a trained driver and female attendant to ensure the safety and comfort of our students during their commute.',
+    description: 'A fleet of well-maintained GPS-enabled buses covers extensive routes across the city. Each bus is staffed with a trained driver and female attendant to ensure the safety and comfort of our students during their commute.',
   }
 ];
 

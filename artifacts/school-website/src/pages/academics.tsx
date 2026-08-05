@@ -82,7 +82,7 @@ export default function Academics() {
                 
                 <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>
-                    [REPLACE PLACEHOLDER TEXT] Swami Vivekanand Sr. Sec. School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is designed to be comprehensive, contemporary, and aligned with the National Education Policy (NEP) 2020.
+                    Swami Vivekanand Sr. Sec. School is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is designed to be comprehensive, contemporary, and aligned with the National Education Policy (NEP) 2020.
                   </p>
                   
                   <div className="my-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-medium">
@@ -107,7 +107,7 @@ export default function Academics() {
                 <div className="w-16 h-1 bg-secondary mb-8 rounded-full" />
                 <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>
-                    [REPLACE PLACEHOLDER TEXT] The formative years are crucial for a child's cognitive and emotional development. Our Pre-Primary wing offers a warm, safe, and stimulating environment where play is the primary mode of learning.
+                    The formative years are crucial for a child's cognitive and emotional development. Our Pre-Primary wing offers a warm, safe, and stimulating environment where play is the primary mode of learning.
                   </p>
                   <div className="my-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-medium">
                     [PRE-PRIMARY PHOTO — REPLACE]
@@ -130,7 +130,7 @@ export default function Academics() {
                 <div className="w-16 h-1 bg-secondary mb-8 rounded-full" />
                 <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>
-                    [REPLACE PLACEHOLDER TEXT] Our Primary curriculum focuses on building a strong foundation in core subjects while encouraging curiosity. The transition from play-based learning to structured academics is managed smoothly and joyfully.
+                    Our Primary curriculum focuses on building a strong foundation in core subjects while encouraging curiosity. The transition from play-based learning to structured academics is managed smoothly and joyfully.
                   </p>
                   <div className="my-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-medium">
                     [PRIMARY SCHOOL PHOTO — REPLACE]
@@ -146,7 +146,7 @@ export default function Academics() {
                 <div className="w-16 h-1 bg-secondary mb-8 rounded-full" />
                 <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>
-                    [REPLACE PLACEHOLDER TEXT] The Secondary years are characterized by a more rigorous academic structure. Students are encouraged to develop independent study habits, analytical skills, and a deeper understanding of subjects.
+                    The Secondary years are characterized by a more rigorous academic structure. Students are encouraged to develop independent study habits, analytical skills, and a deeper understanding of subjects.
                   </p>
                   <div className="my-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-medium">
                     [SECONDARY SCHOOL PHOTO — REPLACE]
@@ -162,7 +162,7 @@ export default function Academics() {
                 <div className="w-16 h-1 bg-secondary mb-8 rounded-full" />
                 <div className="prose prose-lg text-muted-foreground max-w-none">
                   <p>
-                    [REPLACE PLACEHOLDER TEXT] At the Senior Secondary level, we offer specialized streams (Science, Commerce, Humanities) to prepare students for higher education and professional careers. Expert faculty provide intensive coaching and career guidance.
+                    At the Senior Secondary level, we offer specialized streams (Science, Commerce, Humanities) to prepare students for higher education and professional careers. Expert faculty provide intensive coaching and career guidance.
                   </p>
                   <div className="my-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-medium">
                     [SENIOR SECONDARY LAB/CLASS PHOTO — REPLACE]
