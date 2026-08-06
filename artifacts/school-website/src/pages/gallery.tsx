@@ -25,7 +25,7 @@ const galleryItems = [
   { id: 5,  category: 'Sports',         image: '/gallery-sports-2.png',   alt: 'Athletics Race Competition',               height: 'h-48' },
   { id: 6,  category: 'Events',         image: '/gallery-event-3.png',    alt: 'Independence Day Celebration',             height: 'h-48' },
   { id: 7,  category: 'Academics',      image: '/gallery-academics-2.png', alt: 'Students in classroom, lab and library',    height: 'h-80' },
-  { id: 8,  category: 'Infrastructure', image: null,                      alt: 'School building',                          height: 'h-64' },
+  { id: 8,  category: 'Infrastructure', image: '/gallery-infrastructure-2.png', alt: 'World-Class Infrastructure for Holistic Development', height: 'h-64' },
   { id: 9,  category: 'Events',         image: '/gallery-event-4.png',    alt: 'Annual Farewell Celebration',              height: 'h-64' },
   { id: 10, category: 'Sports',         image: '/gallery-sports-3.png',   alt: 'Badminton Championship Trophy & Medals',   height: 'h-48' },
   { id: 11, category: 'Academics',      image: '/gallery-academics-3.png', alt: 'Sports - Build Character, Discipline and Excellence', height: 'h-80' },
