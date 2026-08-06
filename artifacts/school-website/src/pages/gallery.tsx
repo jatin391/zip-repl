@@ -28,7 +28,7 @@ const galleryItems = [
   { id: 8,  category: 'Infrastructure', image: null,                      alt: 'School building',                          height: 'h-64' },
   { id: 9,  category: 'Events',         image: '/gallery-event-4.png',    alt: 'Annual Farewell Celebration',              height: 'h-64' },
   { id: 10, category: 'Sports',         image: '/gallery-sports-3.png',   alt: 'Badminton Championship Trophy & Medals',   height: 'h-48' },
-  { id: 11, category: 'Academics',      image: null,                      alt: 'Science exhibition',                       height: 'h-80' },
+  { id: 11, category: 'Academics',      image: '/gallery-academics-3.png', alt: 'Sports - Build Character, Discipline and Excellence', height: 'h-80' },
 ];
 
 export default function Gallery() {
