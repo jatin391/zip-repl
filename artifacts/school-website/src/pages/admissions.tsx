@@ -1,4 +1,4 @@
-import { FileText, ClipboardCheck, Calculator, CheckCircle2 } from 'lucide-react';
+import { FileText, ClipboardCheck, CheckCircle2 } from 'lucide-react';
 
 function PageHeader({ title, subtitle }: { title: string, subtitle: string }) {
   return (
@@ -53,51 +53,6 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* Fee Structure Placeholder */}
-      <section id="fees" className="py-24 bg-muted/50 scroll-mt-20">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-6">Fee Structure (2026-27)</h2>
-            <div className="w-20 h-1 bg-secondary mx-auto rounded-full" />
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-md border border-border overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm whitespace-nowrap">
-                <thead className="bg-primary text-white">
-                  <tr>
-                    <th className="px-6 py-4 font-bold">Class Level</th>
-                    <th className="px-6 py-4 font-bold">Registration Fee</th>
-                    <th className="px-6 py-4 font-bold">Admission Fee</th>
-                    <th className="px-6 py-4 font-bold">Quarterly Fee</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {[
-                    'Pre-Primary (Nursery - KG)',
-                    'Primary (I - V)',
-                    'Secondary (VI - X)',
-                    'Senior Secondary (XI - XII)'
-                  ].map((level, i) => (
-                    <tr key={i} className="hover:bg-muted/50 transition-colors">
-                      <td className="px-6 py-4 font-bold text-primary">{level}</td>
-                      <td className="px-6 py-4 text-muted-foreground">[FEE — REPLACE]</td>
-                      <td className="px-6 py-4 text-muted-foreground">[FEE — REPLACE]</td>
-                      <td className="px-6 py-4 text-muted-foreground">[FEE — REPLACE]</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="bg-primary/5 p-4 flex items-start gap-3 border-t border-border">
-              <Calculator className="text-secondary shrink-0" size={20} />
-              <p className="text-xs text-muted-foreground">
-                * Note: Transport fee is calculated extra based on distance. Book set and uniform costs are not included in the above structure. Fees are subject to change as per management decisions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Enquiry Form */}
       <section id="enquiry" className="py-24 scroll-mt-20">
