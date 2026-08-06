@@ -196,9 +196,20 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className={`bg-white/10 rounded-xl flex items-center justify-center text-white/40 text-sm border border-white/5 hover:border-secondary transition-colors ${i === 1 || i === 4 ? 'row-span-2 aspect-auto' : 'aspect-square'}`}>
-                [SCHOOL PHOTO — REPLACE]
+            {[
+              { src: '/gallery-edu-fiesta.png',       alt: 'Edu Fiesta Event',              tall: true  },
+              { src: '/gallery-academics.png',        alt: 'Academic Session',              tall: false },
+              { src: '/gallery-sports-1.png',         alt: 'Cricket Team',                  tall: false },
+              { src: '/gallery-infrastructure.png',   alt: 'School Infrastructure',         tall: true  },
+              { src: '/gallery-academics-2.png',      alt: 'Students Learning',             tall: false },
+              { src: '/gallery-sports-2.png',         alt: 'Athletics Competition',         tall: false },
+            ].map((item, i) => (
+              <div key={i} className={`rounded-xl overflow-hidden border border-white/10 hover:border-secondary transition-colors group ${item.tall ? 'row-span-2' : 'aspect-square'}`}>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             ))}
           </div>
