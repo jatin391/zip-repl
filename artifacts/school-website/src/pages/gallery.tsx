@@ -21,7 +21,7 @@ const galleryItems = [
   { id: 1,  category: 'Sports',         image: '/gallery-sports-1.png',   alt: 'Cricket Team',                             height: 'h-64' },
   { id: 2,  category: 'Academics',      image: '/gallery-academics.png',  alt: 'Academic session - Classroom, Library & Lab', height: 'h-48' },
   { id: 3,  category: 'Events',         image: '/gallery-event-2.png',    alt: 'Art & Classroom Event',                    height: 'h-64' },
-  { id: 4,  category: 'Infrastructure', image: null,                      alt: 'School infrastructure',                    height: 'h-80' },
+  { id: 4,  category: 'Infrastructure', image: '/gallery-infrastructure.png', alt: 'World-Class Infrastructure - School Building and Facilities', height: 'h-80' },
   { id: 5,  category: 'Sports',         image: '/gallery-sports-2.png',   alt: 'Athletics Race Competition',               height: 'h-48' },
   { id: 6,  category: 'Events',         image: '/gallery-event-3.png',    alt: 'Independence Day Celebration',             height: 'h-48' },
   { id: 7,  category: 'Academics',      image: '/gallery-academics-2.png', alt: 'Students in classroom, lab and library',    height: 'h-80' },
