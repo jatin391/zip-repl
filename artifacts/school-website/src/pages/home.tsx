@@ -144,32 +144,37 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: 'Library', image: '/facility-library.png' },
-              { name: 'Science Labs', image: '/facility-labs.png' },
-              { name: 'Sports Complex', image: '/facility-sports.png' },
-              { name: 'Transport', image: '/facility-transport.png' },
-              { name: 'Smart Classrooms', image: '/facility-classrooms.png' },
-              { name: 'Computer Lab', image: '/facility-computer-lab.png' },
+              { name: 'Library',         image: '/facility-library.png',    tab: 'library'    },
+              { name: 'Science Labs',    image: '/facility-labs.png',       tab: 'labs'       },
+              { name: 'Sports Complex',  image: '/facility-sports.png',     tab: 'sports'     },
+              { name: 'Transport',       image: '/facility-transport.png',  tab: 'transport'  },
+              { name: 'Smart Classrooms',image: '/facility-classrooms.png', tab: 'classrooms' },
+              { name: 'Computer Lab',    image: '/facility-computer-lab.png', tab: 'labs'     },
             ].map((facility, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl overflow-hidden shadow-md group border border-border"
+                className="bg-white rounded-2xl overflow-hidden shadow-md group border border-border cursor-pointer"
               >
-                <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-                  {facility.image ? (
-                    <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" />
-                  ) : (
-                    <span className="text-gray-500 text-sm font-medium z-10">[FACILITY PHOTO — REPLACE]</span>
-                  )}
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">{facility.name}</h3>
-                  <p className="text-muted-foreground text-sm">State-of-the-art infrastructure designed to support comprehensive learning and development.</p>
-                </div>
+                <Link href={`/facilities?tab=${facility.tab}`} className="block">
+                  <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
+                    {facility.image ? (
+                      <img src={facility.image} alt={facility.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    ) : (
+                      <span className="text-gray-500 text-sm font-medium z-10">[FACILITY PHOTO — REPLACE]</span>
+                    )}
+                    <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">{facility.name}</h3>
+                    <p className="text-muted-foreground text-sm">State-of-the-art infrastructure designed to support comprehensive learning and development.</p>
+                    <span className="inline-flex items-center mt-3 text-secondary text-sm font-semibold group-hover:underline">
+                      View Details <ArrowRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
