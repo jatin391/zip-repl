@@ -202,20 +202,29 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             {[
-              { src: '/gallery-edu-fiesta.png',       alt: 'Edu Fiesta Event',              tall: true  },
-              { src: '/gallery-academics.png',        alt: 'Academic Session',              tall: false },
-              { src: '/gallery-sports-1.png',         alt: 'Cricket Team',                  tall: false },
-              { src: '/gallery-infrastructure.png',   alt: 'School Infrastructure',         tall: true  },
-              { src: '/gallery-academics-2.png',      alt: 'Students Learning',             tall: false },
-              { src: '/gallery-sports-2.png',         alt: 'Athletics Competition',         tall: false },
+              { src: '/gallery-edu-fiesta.png',     alt: 'Edu Fiesta Event',        label: 'Events',         category: 'Events',         tall: true  },
+              { src: '/gallery-academics.png',      alt: 'Academic Session',        label: 'Academics',      category: 'Academics',      tall: false },
+              { src: '/gallery-sports-1.png',       alt: 'Cricket Team',            label: 'Sports',         category: 'Sports',         tall: false },
+              { src: '/gallery-infrastructure.png', alt: 'School Infrastructure',   label: 'Infrastructure', category: 'Infrastructure', tall: true  },
+              { src: '/gallery-academics-2.png',    alt: 'Students Learning',       label: 'Academics',      category: 'Academics',      tall: false },
+              { src: '/gallery-sports-2.png',       alt: 'Athletics Competition',   label: 'Sports',         category: 'Sports',         tall: false },
             ].map((item, i) => (
-              <div key={i} className={`rounded-xl overflow-hidden border border-white/10 hover:border-secondary transition-colors group ${item.tall ? 'row-span-2' : 'aspect-square'}`}>
+              <Link
+                key={i}
+                href={`/gallery?category=${item.category}`}
+                className={`rounded-xl overflow-hidden border border-white/10 hover:border-secondary transition-colors group relative block ${item.tall ? 'row-span-2' : 'aspect-square'}`}
+              >
                 <img
                   src={item.src}
                   alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-              </div>
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/60 transition-all duration-300 flex items-center justify-center">
+                  <span className="text-white font-bold tracking-wider uppercase text-sm border-2 border-secondary px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {item.label}
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

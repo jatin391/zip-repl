@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearch } from 'wouter';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -32,7 +33,16 @@ const galleryItems = [
 ];
 
 export default function Gallery() {
-  const [filter, setFilter] = useState('All');
+  const search = useSearch();
+  const categoryFromUrl = categories.includes(new URLSearchParams(search).get('category') ?? '')
+    ? (new URLSearchParams(search).get('category') as string)
+    : 'All';
+
+  const [filter, setFilter] = useState(categoryFromUrl);
+
+  useEffect(() => {
+    setFilter(categoryFromUrl);
+  }, [categoryFromUrl]);
 
   const filteredImages = galleryItems.filter(img => filter === 'All' || img.category === filter);
 
