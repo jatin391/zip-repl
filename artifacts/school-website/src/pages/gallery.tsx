@@ -19,7 +19,7 @@ const categories = ['All', 'Events', 'Sports', 'Academics', 'Infrastructure'];
 const galleryItems = [
   { id: 0,  category: 'Events',         image: '/gallery-edu-fiesta.png', alt: 'Education Fair - Edu Fiesta Event',        height: 'h-80' },
   { id: 1,  category: 'Sports',         image: '/gallery-sports-1.png',   alt: 'Cricket Team',                             height: 'h-64' },
-  { id: 2,  category: 'Academics',      image: null,                      alt: 'Academic session',                         height: 'h-48' },
+  { id: 2,  category: 'Academics',      image: '/gallery-academics.png',  alt: 'Academic session - Classroom, Library & Lab', height: 'h-48' },
   { id: 3,  category: 'Events',         image: '/gallery-event-2.png',    alt: 'Art & Classroom Event',                    height: 'h-64' },
   { id: 4,  category: 'Infrastructure', image: null,                      alt: 'School infrastructure',                    height: 'h-80' },
   { id: 5,  category: 'Sports',         image: '/gallery-sports-2.png',   alt: 'Athletics Race Competition',               height: 'h-48' },
