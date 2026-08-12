@@ -51,7 +51,15 @@ export default function About() {
               </div>
             </div>
             <div className="h-[400px] bg-gray-200 rounded-3xl flex items-center justify-center border-8 border-white shadow-xl relative overflow-hidden">
-              <span className="text-gray-500 font-medium z-10">[HISTORICAL SCHOOL PHOTO — REPLACE]</span>
+              <img
+                src="/gallery-infrastructure-2.png"
+                alt="Swami Vivekanand school campus"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
+              <span className="absolute bottom-6 left-6 text-white font-semibold tracking-wide">
+                A legacy of learning and growth
+              </span>
             </div>
           </div>
         </div>
@@ -119,11 +127,19 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
-              <div className="h-48 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20">
-                <span className="text-white/50 text-sm">[CAMPUS PHOTO]</span>
+              <div className="h-48 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 overflow-hidden">
+                <img
+                  src="/facility-classrooms.png"
+                  alt="Students learning in a smart classroom"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="h-48 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 mt-8">
-                <span className="text-white/50 text-sm">[CAMPUS PHOTO]</span>
+              <div className="h-48 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 mt-8 overflow-hidden">
+                <img
+                  src="/facility-library.png"
+                  alt="School library"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="order-1 lg:order-2">
