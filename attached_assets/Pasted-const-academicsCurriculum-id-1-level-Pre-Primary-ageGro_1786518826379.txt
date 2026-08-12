@@ -1,0 +1,56 @@
+const academicsCurriculum = [
+  {
+    id: 1,
+    level: "Pre-Primary",
+    ageGroup: "3 - 5 Years",
+    classes: "Nursery, LKG, UKG",
+    description: "Play-way method से बच्चों में basic learning skills, motor skills, और social skills विकसित की जाती हैं। Focus होता है fun-based learning, rhymes, storytelling, और creative activities पर।",
+    highlights: [
+      "Activity-based learning",
+      "Language & number readiness",
+      "Art, craft & music",
+      "Personality & social development"
+    ]
+  },
+  {
+    id: 2,
+    level: "Primary",
+    ageGroup: "6 - 10 Years",
+    classes: "Class 1 to Class 5",
+    description: "इस स्तर पर बच्चों की foundation मजबूत की जाती है — Language, Mathematics, EVS/Science, और Computer basics के साथ-साथ moral values भी सिखाए जाते हैं।",
+    highlights: [
+      "Strong foundation in core subjects",
+      "Activity & project based learning",
+      "Focus on reading & writing skills",
+      "Co-curricular activities"
+    ]
+  },
+  {
+    id: 3,
+    level: "Secondary",
+    ageGroup: "11 - 15 Years",
+    classes: "Class 6 to Class 10",
+    description: "Board curriculum (CBSE/ICSE/State Board) के अनुसार Science, Mathematics, Social Science, Languages, और Computer Applications पर गहराई से पढ़ाई कराई जाती है, जिससे students आगे की पढ़ाई के लिए तैयार हों।",
+    highlights: [
+      "CBSE/ICSE aligned curriculum",
+      "Practical labs & projects",
+      "Regular assessments & board exam prep",
+      "Skill development programs"
+    ]
+  },
+  {
+    id: 4,
+    level: "Senior Secondary",
+    ageGroup: "16 - 18 Years",
+    classes: "Class 11 to Class 12",
+    description: "Students अपनी रुचि अनुसार Science, Commerce, या Humanities stream चुनते हैं। यहाँ career-oriented और board exam focused teaching दी जाती है, साथ ही competitive exam guidance भी।",
+    highlights: [
+      "Stream selection: Science / Commerce / Humanities",
+      "Board exam & competitive exam preparation",
+      "Career counseling",
+      "Advanced practicals & projects"
+    ]
+  }
+];
+
+export default academicsCurriculum;
